@@ -3,7 +3,9 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 rest/target/
-ryresoninsurance/target
+portlet_solution/target
+rest/.idea/
+portlet_solution/.idea/
 
 # Package Files #
 *.jar
