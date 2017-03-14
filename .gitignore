@@ -2,6 +2,8 @@
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
+rest/target/
+ryresoninsurance/target
 
 # Package Files #
 *.jar
