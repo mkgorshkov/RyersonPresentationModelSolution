@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="ryersoninsurance:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="ryerson-insurance-1.0.war">
-      <element id="artifact" artifact-name="ryersoninsurance:war exploded" />
-    </root>
-  </artifact>
-</component>
