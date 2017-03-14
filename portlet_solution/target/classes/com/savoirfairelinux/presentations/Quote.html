@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="7.7.0">
+ </head> 
+ <body> 
+  <vaadin-tab-sheet caption="TabSheet" height="700px"> 
+   <tab caption="Personal Details" selected> 
+    <vaadin-form-layout margin _id="personalForm"> 
+     <vaadin-text-field caption="First Name" required width="50%" _id="firstName"></vaadin-text-field> 
+     <vaadin-text-field caption="Last Name" required width="50%" _id="lastName"></vaadin-text-field> 
+     <vaadin-option-group caption="Gender" required _id="gender"> 
+      <option>Male</option> 
+      <option>Female</option> 
+     </vaadin-option-group> 
+     <vaadin-text-field caption="Postal Code" required _id="postalCode"></vaadin-text-field> 
+     <vaadin-inline-date-field caption="Date of Birth" required _id="dateOfBirth"></vaadin-inline-date-field> 
+     <vaadin-vertical-layout> 
+      <vaadin-button plain-text _id="next" :right>
+        Next 
+      </vaadin-button> 
+     </vaadin-vertical-layout> 
+    </vaadin-form-layout> 
+   </tab> 
+   <tab caption="Vehicle Details"> 
+    <vaadin-form-layout margin _id="vehicleForm"> 
+     <vaadin-combo-box caption="Type of Vehicle" required width="50%" _id="vehicleType"> 
+      <option>Motorcycle</option> 
+      <option>Automobile</option> 
+     </vaadin-combo-box> 
+     <vaadin-combo-box caption="Make" enabled="false" required width="50%" _id="make"></vaadin-combo-box> 
+     <vaadin-combo-box caption="Model" enabled="false" required width="50%" _id="model"></vaadin-combo-box> 
+     <vaadin-popup-date-field caption="Year" resolution="year" enabled="false" required width="50%" _id="year"></vaadin-popup-date-field> 
+     <vaadin-slider caption="Condition" enabled="false" required width="50%" _id="condition"></vaadin-slider> 
+     <vaadin-vertical-layout> 
+      <vaadin-button plain-text _id="submit" :right>
+        Request Quotes 
+      </vaadin-button> 
+     </vaadin-vertical-layout> 
+    </vaadin-form-layout> 
+   </tab> 
+  </vaadin-tab-sheet>  
+ </body>
+</html>
